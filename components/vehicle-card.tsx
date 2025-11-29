@@ -1,5 +1,6 @@
 import { Vehicle } from "@/types/vehicle";
 import { ButtonLink } from "./ui/button";
+import { VehicleViewer } from "./3d/vehicle-viewer";
 
 interface VehicleCardProps {
   vehicle: Vehicle;
@@ -8,30 +9,9 @@ interface VehicleCardProps {
 export function VehicleCard({ vehicle }: VehicleCardProps) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl border border-foreground/5 bg-background transition-shadow hover:shadow-lg">
-      {/* Image placeholder */}
+      {/* 3D Vehicle Viewer */}
       <div className="relative aspect-[4/3] bg-muted">
-        <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
-          {/* Placeholder - will be replaced with Image or 3D viewer */}
-          <svg
-            className="h-16 w-16 opacity-30"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1}
-              d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"
-            />
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1}
-              d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"
-            />
-          </svg>
-        </div>
+        <VehicleViewer vehicle={vehicle} />
 
         {/* Category badge */}
         <div className="absolute left-3 top-3">
