@@ -36,7 +36,7 @@ export function VehicleCard({ vehicle }: VehicleCardProps) {
         {/* Category badge */}
         <div className="absolute left-3 top-3">
           <span className="inline-flex items-center rounded-full bg-background/90 px-2.5 py-0.5 text-xs font-medium backdrop-blur-sm">
-            {vehicle.category === "electric" ? "Elektrisk" : "Varebil"}
+            {vehicle.category === "electric" ? "Elektrisk" : vehicle.category === "compact" ? "Kompakt" : "Varebil"}
           </span>
         </div>
 

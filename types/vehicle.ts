@@ -11,7 +11,7 @@ export interface Vehicle {
   id: string;
   name: string;
   type: "sedan" | "suv" | "van";
-  category: "electric" | "commercial";
+  category: "electric" | "commercial" | "compact";
   tagline: string;
   description: string;
   specs: VehicleSpecs;
@@ -24,4 +24,4 @@ export interface Vehicle {
   priceFrom?: string;
 }
 
-export type VehicleCategory = "all" | "electric" | "commercial";
+export type VehicleCategory = "all" | "electric" | "commercial" | "compact";

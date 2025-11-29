@@ -19,7 +19,7 @@ export const vehicles: Vehicle[] = [
     features: ["Autopilot", "Premium lyd", "Glastak", "Varmepumpe"],
     imagePath: "/images/vehicles/tesla-model-3.jpg",
     imageAlt: "Hvit Tesla Model 3 parkert i Oslo",
-    getaroundUrl: "https://getaround.com", // TODO: Replace with actual URL
+    getaroundUrl: "https://no.getaround.com/bilutleie/oslo/tesla-model-3-long-range-1622165",
     available: true,
     priceFrom: "fra 599 kr/dag",
   },
@@ -41,7 +41,7 @@ export const vehicles: Vehicle[] = [
     features: ["Autopilot", "Panoramatak", "Stor bagasjeplass", "Tilhengerfeste"],
     imagePath: "/images/vehicles/tesla-model-y.jpg",
     imageAlt: "Blå Tesla Model Y i norsk natur",
-    getaroundUrl: "https://getaround.com", // TODO: Replace with actual URL
+    getaroundUrl: "https://no.getaround.com/bilutleie/oslo/tesla-model-y-long-range-1790785",
     available: true,
     priceFrom: "fra 699 kr/dag",
   },
@@ -62,30 +62,29 @@ export const vehicles: Vehicle[] = [
     features: ["Stort lasterom", "Sidedobbeltdor", "Ryggesensorer", "Bluetooth"],
     imagePath: "/images/vehicles/opel-vivaro.jpg",
     imageAlt: "Hvit Opel Vivaro varebil",
-    getaroundUrl: "https://getaround.com", // TODO: Replace with actual URL
+    getaroundUrl: "https://no.getaround.com/bilutleie/oslo/opel-vivaro-1351582",
     available: true,
     priceFrom: "fra 499 kr/dag",
   },
   {
-    id: "opel-vivaro-2",
-    name: "Opel Vivaro",
-    type: "van",
-    category: "commercial",
-    tagline: "Pålitelig varebil",
+    id: "ford-fiesta",
+    name: "Ford Fiesta",
+    type: "sedan",
+    category: "compact",
+    tagline: "Kompakt og okonomisk",
     description:
-      "Vår andre Opel Vivaro – identisk med den første. Perfekt når du trenger ekstra kapasitet.",
+      "Smidig liten bil perfekt for bykjoring. Enkel å parkere og okonomisk i drift.",
     specs: {
-      seats: 3,
+      seats: 5,
       transmission: "Manual",
-      cargo: "5.3 m³",
-      power: "145 hk",
+      power: "85 hk",
     },
-    features: ["Stort lasterom", "Sidedobbeltdor", "Ryggesensorer", "Bluetooth"],
-    imagePath: "/images/vehicles/opel-vivaro.jpg",
-    imageAlt: "Hvit Opel Vivaro varebil",
-    getaroundUrl: "https://getaround.com", // TODO: Replace with actual URL
+    features: ["Bluetooth", "Klimaanlegg", "USB-lading", "Ryggesensorer"],
+    imagePath: "/images/vehicles/ford-fiesta.jpg",
+    imageAlt: "Ford Fiesta i Oslo",
+    getaroundUrl: "https://no.getaround.com/bilutleie/oslo/ford-fiesta-1496525",
     available: true,
-    priceFrom: "fra 499 kr/dag",
+    priceFrom: "fra 349 kr/dag",
   },
 ];
 
